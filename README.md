@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# upload-api
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 💻 Sobre o projeto
+FrontEnd de uma aplicação que faz uploads de arquivos
+![Captura de Tela 2022-06-20 às 20 02 32](https://user-images.githubusercontent.com/77745607/174687049-2aaa6f2e-23a8-48e9-a6d1-e2a1e5f2b38e.png)
 
-## Available Scripts
+## Projeto diponivel em:
 
-In the project directory, you can run:
+<a href="https://uploaded-api.herokuapp.com">
+https://uploaded-api.herokuapp.com
+</a>
 
-### `npm start`
+## ⚙️ Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- SignUp
+- Login
+- Pegar informações de aruivos enviados
+- Enviar arquivos
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Como executar o projeto localmente
 
-### `npm test`
+```bash
+git clone https://github.com/Janaylla/upload-api.git
+```
+Crie um aruivo .env e preencha com o link do servidor na varivel correspodente 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+```env
+REACT_APP_API = https://uploaded-api.herokuapp.com
+<!-- ou: REACT_APP_API = localhost:http://localhost:3001 -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+REACT_APP_API = https://uploaded-api.herokuapp.com
+```
+Codigo do servidor esta disponivel neste link:
+<a href="https://github.com/Janaylla/upload-api">
+  [https://uploaded-api.herokuapp.com](https://github.com/Janaylla/upload-api)
+</a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+No terminal novamente:
+```bash
+npm install
+npm run build
+npm run start
+```
+## 🛠 Tecnologias
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+ (React + TypeScript)
+  - axios
+  - styled-componen
+  - @mui/icons-material
+  - react-dropzone
